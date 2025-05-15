@@ -1,0 +1,52 @@
+# Aturan MISRA-C++ yang Diterapkan pada Proyek Drone Kamikaze
+
+## Aturan Umum
+- Rule 0-1-1: Semua kode harus sesuai dengan standar ISO/IEC 14882:2003 C++.
+- Rule 0-1-2: Nilai numerik literal harus eksplisit menyatakan tipe data.
+- Rule 0-1-3: Implementasi-defined behavior harus didokumentasikan dan dipahami.
+- Rule 0-1-4: Undefined behavior harus dihindari.
+- Rule 0-1-5: Implementation-defined behavior tidak boleh digunakan.
+- Rule 0-1-6: Compiler warning harus ditangani dan diperbaiki.
+- Rule 0-1-7: Pesan peringatan preprocessing directive tidak boleh ditekan.
+- Rule 0-1-8: Semua fungsi dengan parameter void harus dinyatakan dengan empty parenthesis.
+- Rule 0-1-9: Semua tipe harus dideklarasikan secara eksplisit.
+- Rule 0-1-10: Implicit conversion antara signed dan unsigned tidak diperbolehkan.
+- Rule 0-1-11: Konversi dari pointer ke integer tidak diperbolehkan.
+- Rule 0-1-12: Konversi pointer antara pointer-pointer yang tidak terkait tidak diperbolehkan.
+
+## Aturan Environment
+- Rule 0-2-1: Compiler harus sesuai dengan standar C++.
+- Rule 0-3-1: Assembly language hanya boleh digunakan di dedicated function.
+- Rule 0-3-2: Operasi I/O harus digunakan melalui abstraction layer.
+
+## Aturan Bahasa
+- Rule 2-3-1: Tipe dinamis tidak boleh digunakan.
+- Rule 2-7-1: Nilai enumerasi tidak boleh digunakan sebagai integer.
+- Rule 2-10-1: Variabel tidak boleh implisit mengubah tipe dalam ekspresi.
+- Rule 2-10-2: Tipe data memoryless harus eksplisit dikonversi.
+- Rule 2-13-1: Hanya casting berikut yang diperbolehkan: static_cast, const_cast.
+- Rule 2-13-2: Dynamic_cast tidak boleh digunakan.
+- Rule 2-13-3: Reinterpret_cast tidak boleh digunakan.
+- Rule 2-13-4: C-style cast tidak boleh digunakan.
+
+## Aturan Alokasi Memori
+- Rule 3-9-1: const keyword harus digunakan kapanpun data tidak diubah.
+- Rule 3-9-2: Variabel tidak boleh digunakan sebelum diinisialisasi.
+- Rule 3-9-3: Dynamic heap memory tidak boleh digunakan.
+- Rule 4-5-1: Ekspresi dengan side effect harus dihindari di statement kompleks.
+- Rule 4-10-1: NULL macro tidak boleh digunakan.
+- Rule 4-10-2: Literal 0 tidak boleh digunakan sebagai null-pointer-constant.
+
+## Aturan Kelas
+- Rule 5-0-1: Variabel harus dideklarasikan dalam scope sekecil mungkin.
+- Rule 5-0-2: Variabel tidak boleh disembunyikan dalam scope lebih dalam.
+- Rule 5-0-3: Identifier yang sama tidak boleh digunakan kembali.
+- Rule 5-0-4: Identifier harus unik dan memiliki arti yang jelas.
+- Rule 5-0-5: Multiple variable declarations dalam satu statement tidak diperbolehkan.
+- Rule 5-0-6: Initialization pada saat deklarasi lebih disukai.
+- Rule 5-0-7: Variabel dalam class harus private.
+- Rule 5-0-8: class harus memiliki user-defined konstruktor.
+- Rule 5-0-9: class harus memiliki konstruktor default, copy, dan destruktor.
+- Rule 5-0-10: Inheritance virtual tidak diperbolehkan.
+- Rule 5-0-11: Multiple inheritance terbatas hanya pada pure abstract class.
+- Rule 5-0-12: Function overloading terbatas hanya pada variasi jumlah parameter. 
